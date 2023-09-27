@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="profile">
+        <img id="avatar" src="default-avatar.jpg" alt="Avatar">
+        <div class="profile-box">
+            <h1 id="fullName">John Doe</h1>
+        </div>
+        <div class="profile-box">
+            <p id="jobTitle">Vị trí công việc cực kỳ dài và chi tiết hơn một chút nữa để kiểm tra layout</p>
+        </div>
+        <div class="profile-box">
+            <p id="companyName">Company name</p>
+        </div>
+        <div class="profile-box">
+            <p id="phone">Phone</p>
+        </div>
+        <div class="profile-box">
+            <p id="personalMail">Personal Mail</p>
+        </div>
+        <div class="profile-box">
+            <p id="workMail">Work Mail</p>
+        </div>
+        <div class="social-icons">
+            <a href="#" target="_blank" class="social-icon" id="facebookIcon"><img src="./static/img/facebook.png" alt="Facebook"></a>
+            <a href="#" target="_blank" class="social-icon" id="zaloIcon"><img src="./static/img/zalo-icon.png" alt="Zalo"></a>
+            <a href="#" target="_blank" class="social-icon" id="gmailIcon"><img src="./static/img/gmail.png" alt="Gmail"></a>
+        </div>
+        <button id="editButton">Cập nhật</button>
+    </div>
+
+    <div class="update-form" style="display: none;">
+        <h2>Cập nhật thông tin</h2>
+        <input type="file" id="newImage" accept="image/*">
+        <input type="text" id="newFullName" placeholder="Họ và Tên">
+        <input type="text" id="newJobTitle" placeholder="Vị trí công việc">
+        <input type="text" id="newCompanyName" placeholder="Company name">
+        <input type="text" id="newPhone" placeholder="Phone">
+        <input type="text" id="newPersonalMail" placeholder="Personal Mail">
+        <input type="text" id="newWorkMail" placeholder="Work Mail">
+        <h3>Liên kết mạng xã hội:</h3>
+        <input type="text" id="newFacebookLink" placeholder="Liên kết Facebook">
+        <input type="text" id="newZaloLink" placeholder="Liên kết Zalo">
+        <input type="text" id="newGmailLink" placeholder="Liên kết Gmail">
+        <button id="updateButton">Lưu</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

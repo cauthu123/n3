@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User4</title>
+    <!-- Bao gồm tệp CSS của Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+<style>
+    *{
+        color: rgb(0, 0, 0);
+    }
+    body{
+        /*background-color: #837c82;  /*Bật cái background này nếu ko muốn thêm hình ảnh làm nền (xóa dấu /* ở đầu đi)*/
+        background: url("../static/img/step.jpg"); /*Ko dùng hình ảnh làm nền thì thêm (/* ở đầu)*/
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    h5{
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bold;
+        color: rgb(0, 0, 0); /* Màu của Tên */
+        /*Thay đổi kiểu chữ thì dùng 
+        font-family: ctrl + space để chọn font; */
+    }
+    #text{
+        color: black; /*Màu mô tả*/
+        /*Thay đổi kiểu chữ thì dùng 
+        font-family: ctrl + space để chọn font; */
+    }
+    header > #anh{
+        box-shadow: rgb(208, 34, 34) 0px 2px 8px 0px; /* chỉnh màu viền avatar ở đây */
+    }
+    /*Nút Instagram*/
+    #btn-ig{
+        background: linear-gradient(45deg, #f705a6, rgb(189, 37, 37), #d36709);
+        color: white; /*Màu chữ trong nút*/
+        border: none; 
+        border-radius: 10px;
+    }
+    /*Nút zalo*/
+    #btn-zalo{
+        background: linear-gradient(45deg, #0586f7, #ffffff);
+        color: white; /*Màu chữ trong nút*/
+        border: none; 
+        border-radius: 10px;
+    }
+    /*Nút fb, yt, sdt*/
+    #btn-fb, #btn-yt, #btn-sdt{
+        border-radius: 10px;
+        color: white; /*Màu chữ trong nút*/
+    }
+    a{
+        margin-top: 10px;
+        width: 100%;
+    }
+</style>
+<body>
+<div id="particles-js"></div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="">
+                <header>
+                    <!-- Đưa đường dẫn ảnh đại diện vào trong dấu ngoặc kép của src  -->
+                    <img id="anh" src="../static/img/qui.jpg" class="card-img-top" alt="Ảnh đại diện của bạn">
+                </header>
+                <div class="card-body">
+                    <h5 class="card-title">Quý</h5> <!--Chỗ ghi họ và tên-->
+                    <p class="card-text" id="text">Mô tả bản thân:</p>
+                    <p id="text">Bạn có thể viết mô tả về bản thân ở đây.</p> <!--Có thể viết gì trong đây hoặc xóa-->
+                    <p id="text" style="text-align: center; font-weight: bold; font-size: x-large;">Liên hệ</p>
+
+                    <center>
+                        <!-- Thay thế dấu # bằng đường link truy cập -->
+                        <a href="https://www.facebook.com/vangai.cham.37" class="btn btn-primary mr-2" id="btn-fb">Facebook</a> <br>
+                        <a href="https://zalo.me/84768846185" class="btn btn-success mr-2" id="btn-zalo">Zalo</a> <br>
+                        <a href="#" class="btn" id="btn-ig">Instagram</a> <br>
+                        <a href="#" class="btn btn-danger" id="btn-yt">Youtube</a>
+                        <a href="tel:0768846185" class="btn btn-success" id="btn-sdt">Số điện thoại</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../static/js/particles.js"></script>
+<script src="../static/js/app.js"></script>
+<!-- Bao gồm các tệp JavaScript của Bootstrap và jQuery (tùy chọn) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
